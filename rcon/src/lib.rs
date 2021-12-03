@@ -1,8 +1,7 @@
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        let result = 2 + 2;
-        assert_eq!(result, 4);
-    }
-}
+mod client;
+mod codec;
+mod error;
+mod message;
+
+pub use client::Client;
+pub use error::Error;
